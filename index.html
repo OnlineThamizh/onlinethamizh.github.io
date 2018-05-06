@@ -56,7 +56,7 @@ function construct()
 		}
 	}
 
-	document.getElementById("tweetMessage").href='http://twitter.com/intent/tweet?text='+  tweetContentValue +' %23IndiaBetraysTamilnadu' + ' ' + tweetToValue + ' ' + 'pic.twitter.com/' + tweetImageValue;
+	document.getElementById("tweetMessage").href='http://twitter.com/intent/tweet?text='+  tweetContentValue + tweetToValue + ' ' + 'pic.twitter.com/' + tweetImageValue;
 }
 </script>
 </head>
@@ -397,7 +397,6 @@ function construct()
 </td>
 <td valign="top" width="45%">
 
-<br>
 <b>Tweet</b><br><br>
 
 <input type="radio" OnClick="construct()" name="tweetContent" checked value="
