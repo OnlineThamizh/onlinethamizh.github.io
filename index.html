@@ -1,7 +1,7 @@
 ﻿
 <html>
 <head>
-<title>4 Click Easy Tweet No NEET for Tamilnadu</title>
+<title>5 Click Easy Tweet No NEET for Tamilnadu</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style>
 .button {
@@ -17,11 +17,13 @@
 }
 </style>
 <script type="text/javascript">
+
 function setTweetTo(selectObject)
 {
 	document.getElementById("_"+selectObject.value).checked = true;
 	construct();
 }
+
 
 function construct()
 {
@@ -46,6 +48,19 @@ function construct()
 		}
 	}
 
+	var tweettags = document.getElementsByName('tweettag');
+	var tweettagvalue;
+	for(var i = 0; i < tweettags.length; i++)
+	{
+		if(tweettags[i].checked)
+		{
+			if(i==0)
+			{
+				tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
+			}
+		}
+	}
+
 	var tweetImages = document.getElementsByName('tweetImage');
 	var tweetImageValue;
 	for(var i = 0; i < tweetImages.length; i++)
@@ -56,7 +71,7 @@ function construct()
 		}
 	}
 
-	document.getElementById("tweetMessage").href='http://twitter.com/intent/tweet?text='+  tweetContentValue + tweetToValue + ' ' + 'pic.twitter.com/' + tweetImageValue;
+	document.getElementById("tweetMessage").href='http://twitter.com/intent/tweet?text='+  tweetContentValue +  ' ' + tweettagvalue + ' ' + tweetToValue + ' ' + 'pic.twitter.com/' + tweetImageValue;
 }
 </script>
 </head>
@@ -218,7 +233,7 @@ function construct()
 
 </td>
 <td valign="top" width="45%"><b>Step 2</b><br><br>Select any one</td>
-<td valign="top" width="20%"><b>Step 3</b><br><br>Select any one</td>
+<td valign="top" width="20%"><b>Step 3</b><br><br>Select Max Two</td>
 <td valign="top" width="15%"><b>Step 4</b><br><br>Select any one</td>
 <td valign="top" width="10%"><b>Step 5</b><br><br><a id="tweetMessage" class="button" target="_blank" href="">Tweet</a><br>
 <br/><br></td>
@@ -548,6 +563,24 @@ Chennai attracts about 40% of the country's medical tourists and more than six l
 
 </td>
 <td valign="top" width="15%">
+<input type="checkbox" OnClick="construct()" name="tweettag" value="
+%23TNagainstNEET
+">
+#TNagainstNEET
+<br>
+
+<input type="checkbox" OnClick="construct()" name="tweettag" value="
+%23IndiaBetraysTN
+">
+#IndiaBetraysTN
+<br>
+
+<input type="checkbox" OnClick="construct()" name="tweettag" value="
+%23ApproveTNBillToExemptNEET
+">
+#ApproveTNBillToExemptNEET
+<br>
+
 
 <br>
 </td>
