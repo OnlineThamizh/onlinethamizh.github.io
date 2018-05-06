@@ -17,7 +17,7 @@
 }
 </style>
 <script type="text/javascript">
-
+var tweettagvalue;
 function setTweetTo(selectObject)
 {
 	document.getElementById("_"+selectObject.value).checked = true;
@@ -49,12 +49,12 @@ function construct()
 	}
 
 	var tweettags = document.getElementsByName('tweettag');
-	var tweettagvalue;
+	
 	for(var i = 0; i < tweettags.length; i++)
 	{
 		if(tweettags[i].checked)
 		{
-			if (typeof someVar === 'undefined') tweettagvalue = ' ';
+			if (typeof tweettagvalue === 'undefined') tweettagvalue = ' ';
 			tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
 		}
 	}
