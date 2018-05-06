@@ -54,7 +54,7 @@ function construct()
 	{
 		if(tweettags[i].checked)
 		{
-			
+			if (typeof someVar === 'undefined') tweettagvalue = ' ';
 			tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
 		}
 	}
