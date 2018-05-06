@@ -17,7 +17,7 @@
 }
 </style>
 <script type="text/javascript">
-
+var tweettagvalue=''
 function setTweetTo(selectObject)
 {
 	document.getElementById("_"+selectObject.value).checked = true;
@@ -49,19 +49,11 @@ function construct()
 	}
 
 	var tweettags = document.getElementsByName('tweettag');
-	var tweettagvalue;
 	for(var i = 0; i < tweettags.length; i++)
 	{
 		if(tweettags[i].checked)
 		{
-			if(i==0)
-			{
-				tweettagvalue = tweettags[i].value;
-			}
-			else
-			{	
-				tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
-			}
+			tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
 		}
 	}
 
@@ -75,7 +67,7 @@ function construct()
 		}
 	}
 
-	document.getElementById("tweetMessage").href='http://twitter.com/intent/tweet?text='+  tweetContentValue +  ' ' + tweettagvalue + ' ' + tweetToValue + ' ' + 'pic.twitter.com/' + tweetImageValue;
+	document.getElementById("tweetMessage").href='http://twitter.com/intent/tweet?text='+  tweetContentValue +  tweettagvalue + ' ' + tweetToValue + ' ' + 'pic.twitter.com/' + tweetImageValue;
 }
 </script>
 </head>
