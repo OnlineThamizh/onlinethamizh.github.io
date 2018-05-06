@@ -56,9 +56,12 @@ function construct()
 			If (!tweettagvalue)
 			{
 				var tweettagvalue;
-				tweettagvalue = '';
+				tweettagvalue = tweettags[i].value;
 			}
-			tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
+			else
+			{
+				tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
+			}
 		}
 	}
 
