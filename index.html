@@ -49,19 +49,13 @@ function construct()
 	}
 
 	var tweettags = document.getElementsByName('tweettag');
+	var tweettagvalue;
 	for(var i = 0; i < tweettags.length; i++)
 	{
 		if(tweettags[i].checked)
 		{
-			If (!tweettagvalue)
-			{
-				var tweettagvalue;
-				tweettagvalue = tweettags[i].value;
-			}
-			else
-			{
-				tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
-			}
+			
+			tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
 		}
 	}
 
