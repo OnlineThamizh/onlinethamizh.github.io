@@ -17,7 +17,7 @@
 }
 </style>
 <script type="text/javascript">
-var tweettagvalue=''
+
 function setTweetTo(selectObject)
 {
 	document.getElementById("_"+selectObject.value).checked = true;
@@ -53,6 +53,11 @@ function construct()
 	{
 		if(tweettags[i].checked)
 		{
+			If (!tweettagvalue)
+			{
+				var tweettagvalue;
+				tweettagvalue = '';
+			}
 			tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
 		}
 	}
