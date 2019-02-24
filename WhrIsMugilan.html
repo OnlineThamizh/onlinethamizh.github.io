@@ -1,0 +1,570 @@
+﻿
+<html>
+<head>
+<title>5 Click Easy Tweet Where is Mugilan?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.button {
+  font: bold 19px Arial;
+  text-decoration: none;
+  background-color: #EE0000;
+  color: #ffffff;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+<script type="text/javascript">
+
+function setTweetTo(selectObject)
+{
+	document.getElementById("_"+selectObject.value).checked = true;
+	construct();
+}
+
+
+function construct()
+{
+	var tweetTos = document.getElementsByName('tweetTo');
+	var tweetToValue;
+	for(var i = 0; i < tweetTos.length; i++)
+	{
+		if(tweetTos[i].checked)
+		{
+			tweetToValue = tweetTos[i].value;
+			document.getElementById('tweetToDropdown').value=tweetToValue;
+		}
+	}
+
+	var tweetContents = document.getElementsByName('tweetContent');
+	var tweetContentValue;
+	for(var i = 0; i < tweetContents.length; i++)
+	{
+		if(tweetContents[i].checked)
+		{
+			tweetContentValue = tweetContents[i].value;
+		}
+	}
+
+	var tweettags = document.getElementsByName('tweettag');
+	var tweettagvalue 
+	if (typeof tweettagvalue === 'undefined') tweettagvalue = ' ';
+	for(var i = 0; i < tweettags.length; i++)
+	{
+		if(tweettags[i].checked)
+		{
+			
+			tweettagvalue = tweettagvalue + ' ' + tweettags[i].value;
+		}
+	}
+
+	var tweetImages = document.getElementsByName('tweetImage');
+	var tweetImageValue;
+	for(var i = 0; i < tweetImages.length; i++)
+	{
+		if(tweetImages[i].checked)
+		{
+			tweetImageValue = tweetImages[i].value;
+		}
+	}
+
+	document.getElementById("tweetMessage").href='http://twitter.com/intent/tweet?text='+  tweetContentValue +  tweettagvalue + ' ' + tweetToValue + ' ' + 'pic.twitter.com/' + tweetImageValue;
+}
+</script>
+</head>
+<body>
+
+<table width="100%">
+	<td width="50%" align="left">
+		<table cellspacing="10">
+			<tr>
+				<td><a href=index.html>NO NEET Tweet Page</a></td>
+  
+			</tr>
+		</table>
+	</td>
+	<td width="50%" align="right">
+		<table>
+			<tr>
+				 <td><a href=TMassacre.html>Thoothukudi Massacre Tweet Page</a></td> 
+			</tr>
+		</table>
+	</td>
+</table>
+
+<table>
+
+<tr>
+<td valign="top" width="10%"><b>Step 1</b><br><br>Select any one
+
+
+
+<select onchange="setTweetTo(this)" id="tweetToDropdown" >
+<option value="@PMOIndia">PM Office India</option>
+<option value="@rashtrapatibhvn">President of India</option>
+<option value="@TNGOVDIPR">Public Releations TN</option>
+<option value="@PTTVOnlineNews">PuthiyathalaimuraiTV</option>
+<option value="@sunnewstamil">sunnewstamil</option>
+<option value="@tamilthehindu">Tamil The Hindu</option>
+<option value="@Thanthitv">Thanthi TV</option>
+<option value="@polimernews">polimernews</option>
+<option value="@vijaytelevision">vijaytelevision</option>
+<option value="@allindiaradio">allindiaradio</option>
+<option value="@DDNewsLive">DDNewsLive</option>
+<option value="@ndtv">ndtv</option>
+<option value="@cnni">cnni</option>
+<option value="@AJEnglish">AlJazeera English</option>
+<option value="@gulf_news">Gulf News</option>
+<option value="@vikatan">vikatan</option>
+<option value="@CMOTamilNadu">Edappadi K Palaniswami</option>
+<option value="@AIADMKOfficial">AIADMK Party</option>
+<option value="@DMK4TN">DMK4TN</option>
+<option value="@ttvdhinakaran">TTV Dhinakaran</option>
+<option value="@SeemanOfficial">Seeman</option>
+<option value="@arrahman">A.R.Rahman</option>
+<option value="@actorabbas">Abbas</option>
+<option value="@ajithfansdotcom">Ajith Fans</option>
+<option value="@massajith">Ajith Fans (massajith) </option>
+<option value="@thalafansclub">Ajith Fans(thalafansclub)</option>
+<option value="@thalatweets">Ajith FC Trichy</option>
+<option value="@ajithkumaractor">Ajith kumar (Offcial)</option>
+<option value="@ajith_fc">Ajith_fc Suspended</option>
+<option value="@Anbil_Mahesh">Anbil Mahesh</option>
+<option value="@draramadoss">Anbumani Ramadoss</option>
+<option value="@anirudhofficial">Anirudh Ravichander</option>
+<option value="@arivalayam">Arivalayam</option>
+<option value="@arulnithitamil">Arulnithi Tamil</option>
+<option value="@thearvindswami">Arvind Swami</option>
+<option value="@arya_offl">Arya</option>
+<option value="@AshokSelvan">Ashok Selvan</option>
+<option value="@Atlee_dir">Atlee</option>
+<option value="@bbctamil">BBC Tamil</option>
+<option value="@CMOTamilnadu">CM Office Tamilnadu </option>
+<option value="@PDhanapaloffcl">Dhanapal P</option>
+<option value="@dhanushkraja">Dhanush</option>
+<option value="@dhanyarajendran">Dhanya Rajendran(News Minute)</option>
+<option value="@diamondbabu4">Diamond Babu</option>
+<option value="@mpkallakurichi">Dr Kamaraj K</option>
+<option value="@Eruma_saani">Eruma Saani</option>
+<option value="@gvprakash">G.V.prakash</option>
+<option value="@gautamitads">Gautami</option>
+<option value="@Gautham_Karthik ">Gautham Karthik</option>
+<option value="@gtrfm">Gokulam Tamil Radio</option>
+<option value="@Hariadmk">Hari Prabhakaran</option>
+<option value="@hiphoptamizha">Hiphop Tamizha</option>
+<option value="@IndraNooyi">Indra Nooyi</option>
+<option value="@actor_jai">Jai</option>
+<option value="@JAnbazhagan">JAnbazhagan</option>
+<option value="@actor_jayamravi">Jayam Ravi</option>
+<option value="@actorjiiva">Jiiva</option>
+<option value="@jothims">Jothi Mani (Congress)</option>
+<option value="@JUMPCUTS7">Jump Cuts</option>
+<option value="@KadamburRaju">Kadambur Raju</option>
+<option value="@kalaaprabu ">kalaaprabu</option>
+<option value="@kalaignar89">Kalaignar Karunanidhi‏</option>
+<option value="@theVcreations ">Kalaippuli S Thanu</option>
+<option value="@ikamalhaasan">Kamal Haasan</option>
+<option value="@KanimozhiDMK">Kanimozhi DMK</option>
+<option value="@karthi_offl">Karthi Actor</option>
+<option value="@karthicknaren_M">Karthick Naren</option>
+<option value="@kavithamurali">Kavitha Muralidharan</option>
+<option value="@KN_NEHRU">KN Nehru</option>
+<option value="@Kumaraguru_V">Kumaraguru</option>
+<option value="@dirlingusamy">Lingusamy Director</option>
+<option value="@ActorMadhavan">Madhavan</option>
+<option value="@madras_central">Madras Central</option>
+<option value="@Gopiaravindhraj">Madras Central Gopi</option>
+<option value="@mafoikprajan">Mafoi K Pandiarajan</option>
+<option value="@pollachimp1">MAHENDRAN MA,MP.</option>
+<option value="@Maitreyan1955">Maitreyan</option>
+<option value="@Mkatju">Markandey Katju</option>
+<option value="@MemesChennai">Memes Chennai</option>
+<option value="@Narayanan3">Narayanan Thirupathi</option>
+<option value="@narendramodi">Narendra Modi</option>
+<option value="@NarendraModi">Narendra Modi </option>
+<option value="@narendramodi_pm">Narendra Modi PM</option>
+<option value="@nayantharaU">Nayanthara</option>
+<option value="@news18tamilnadu">News 18 TN</option>
+<option value="@newsglitzcom">News Glitz</option>
+<option value="@news7tamil">News7 Tamil</option>
+<option value="@thatstamil">OneIndia Tamil</option>
+<option value="@OfficeofOPS">OPS</option>
+<option value="@pandiraj_dir">Pandiraj</option>
+<option value="@rparthiepan">Parthiepan</option>
+<option value="@PonnaarrBJP">Ponnaarr BJP</option>
+<option value="@prakashraaj">Prakash Raaj</option>
+<option value="@Prasanna_actor">Prasanna</option>
+<option value="@superstarrajini">Rajinikanth</option>
+<option value="@imrajveer1singh ">Rajveer Singh</option>
+<option value="@Director_Ram">Ram Director</option>
+<option value="@DOPrasamathi ">Rasamathi</option>
+<option value="@realsarathkumar">Sarathkumar</option>
+<option value="@V_SathyaBama">SathyaBama MP</option>
+<option value="@selvaraghavan">Selvaraghavan Dir</option>
+<option value="@KASengottaiyan">Sengottaiyan KA</option>
+<option value="@shruthihassan">Shruthi Hassan</option>
+<option value="@actor_siddharth">Siddharth</option>
+<option value="@simbulive">Simbu Live</option>
+<option value="@sivasankar1ss">Sivasankar SS (Andimadam)‏</option>
+<option value="@mkstalin">Stalin MK</option>
+<option value="@Actor_simbufc">STR Simbu</option>
+<option value="@Sudhanshu2208">Sudhanshu Pandey</option>
+<option value="@Suriya_offl">Suriya Sivakumar</option>
+<option value="@tamilspeakers">Tamil speakers</option>
+<option value="@drtamilisaibjp">Tamilisai Soundrajan</option>
+<option value="@Thamizhan_meme">Thamizhan memes</option>
+<option value="@thinkmusicindia">Think Music India</option>
+<option value="@TRBRajaa">TRB Rajaa</option>
+<option value="@trishtrashers">Trisha Krishnan</option>
+<option value="@UN">United Nations</option>
+<option value="@UNHumanRights">UN Human Rights</option>
+<option value="@makkal_pathai">Makkal pathai</option>
+<option value="@draramadoss">Dr. Ramadoss</option>
+<option value="@actor_vadivelu">Vadivelu</option>
+<option value="@mdmkiw">Vaiko MDMK</option>
+<option value="@SValarmathiOffL">Valarmathi S</option>
+<option value="@VanathiBJP">Vanathi Srinivasan</option>
+<option value="@VellamNatarajan">Vellamandi Natarajan</option>
+<option value="@VNNatarajanOffl">Vellamandi Natarajan (Offl)</option>
+<option value="@actorvijay">Vijay (Official)</option>
+<option value="@vijayfanspage">Vijay Fans (vijayfanspage) </option>
+<option value="@vijayfansTN">Vijay Fans (vijayfansTN)</option>
+<option value="@vijayfansupdate">Vijay Fans (vijayfansupdate) </option>
+<option value="@ActorSethupathy">Vijay Sethupathi</option>
+<option value="@Vijayadharani">Vijayadharani</option>
+<option value="@iamVikramPrabhu">Vikram Prabhu</option>
+<option value="@iamvishnuvishal">Vishnu Vishal</option>
+<option value="@actor_vivek">Vivekh actor</option>
+<option value="@twitamils">தமிழ் கீச்சர்கள்</option>
+
+
+</select>
+
+
+</td>
+<td valign="top" width="45%"><b>Step 2</b><br><br>Select any one</td>
+<td valign="top" width="20%"><b>Step 3</b><br><br>Select Max Two</td>
+<td valign="top" width="15%"><b>Step 4</b><br><br>Select any one</td>
+<td valign="top" width="10%"><b>Step 5</b><br><br><a id="tweetMessage" class="button" target="_blank" href="">Tweet</a><br>
+<br/><br></td>
+</tr>
+
+
+<tr>
+<td valign="top" width="10%">
+
+<b>Where is Mugilan handles</b><br><br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@rashtrapatibhvn" checked id="@rashtrapatibhvn">President of India<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@PMOIndia" id="_@PMOIndia">PM Office India<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@CMOTamilnadu"  id="_@CMOTamilnadu">CM Office Tamilnadu <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@OfficeofOPS" id="_@OfficeofOPS">OPS<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@AIADMKOfficial" id="_@AIADMKOfficial">AIADMK Party<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@mkstalin" id="_@mkstalin">Stalin MK<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@UN" id="_@UN">United Nations<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@UNHumanRights" id="_@UNHumanRights">UN Human Rights<br> 
+
+<b>PRESS</b><br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@PTTVOnlineNews" id="_@PTTVOnlineNews">PuthiyathalaimuraiTV<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@news18tamilnadu" id="_@news18tamilnadu">News 18 TN<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Thanthitv" id="_@Thanthitv">Thanthi TV<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@igtamil" id="_@igtamil">IG Tamil<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@news7tamil" id="_@news7tamil">News7 Tamil<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@bbctamil" id="_@bbctamil">BBC Tamil<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@newsglitzcom" id="_@newsglitzcom">News Glitz<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@tamilthehindu" id="_@tamilthehindu">Tamil The Hindu<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@sunnewstamil" id="_@sunnewstamil">@sunnewstamil <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@PTTVOnlineNews" id="_@PTTVOnlineNews">@PTTVOnlineNews <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@polimernews" id="_@polimernews">@polimernews <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@vijaytelevision" id="_@vijaytelevision">@vijaytelevision <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@allindiaradio" id="_@allindiaradio">@allindiaradio <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@DDNewsLive" id="_@DDNewsLive">@DDNewsLive <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@ndtv" id="_@ndtv">@ndtv <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@bbctamil" id="_@bbctamil ">@bbctamil<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@cnni" id="_@cnni ">@cnni<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@gulf_news" id="_@gulf_news ">Gulf News<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@AJEnglish" id="_@AJEnglish">AlJazeera English<br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@vikatan" id="_@vikatan">@vikatan <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@thinkmusicindia" id="_@thinkmusicindia">Think Music India<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@dhanyarajendran" id="_@dhanyarajendran">Dhanya Rajendran (The News Minute)<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@gtrfm" id="_@gtrfm">Gokulam Tamil Radio<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@kavithamurali" id="_@kavithamurali">Kavitha Muralidharan (Marxist)<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@thatstamil" id="_@thatstamil">OneIndia Tamil<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@tamilspeakers" id="_@tamilspeakers">Tamil speakers<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@twitamils" id="_@twitamils">தமிழ் கீச்சர்கள்<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@behindwoods" id="_@behindwoods">Behindwoods Tamil<br>
+
+<b>MEMES</b><br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@Nakkalites" id="_@Nakkalites">Nakkalites<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@SmileSettai" id="_@SmileSettai">Smile Settai<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@BlacksheepTamil" id="_@BlacksheepTamil">Blacksheep Tamil<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Eruma_saani" id="_@Eruma_saani">Eruma Saani<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@JUMPCUTS7" id="_@JUMPCUTS7">Jump Cuts<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@madras_central" id="_@madras_central">Madras Central<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Gopiaravindhraj" id="_@Gopiaravindhraj">Madras Central Gopi Aravindh Raja<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@MemesChennai" id="_@MemesChennai">Memes Chennai<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Thamizhan_meme" id="_@Thamizhan_meme">Thamizhan memes<br> 
+
+<b>Politicians</b><br>
+
+<b>ADMK</b><br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@CMOTamilNadu" id="_@CMOTamilNadu">Edappadi K Palaniswami<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@PDhanapaloffcl" id="_@PDhanapaloffcl">Dhanapal P<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@mpkallakurichi" id="_@mpkallakurichi">Dr Kamaraj K<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@KadamburRaju" id="_@KadamburRaju">Kadambur Raju<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Kumaraguru_V" id="_@Kumaraguru_V">Kumaraguru<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@mafoikprajan" id="_@mafoikprajan">Mafoi K Pandiarajan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@pollachimp1" id="_@pollachimp1">MAHENDRAN MA,MP.<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Maitreyan1955" id="_@Maitreyan1955">Maitreyan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@TNGOVDIPR" id="_@TNGOVDIPR">Public Releations TN<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@V_SathyaBama" id="_@V_SathyaBama">SathyaBama MP<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@KASengottaiyan" id="_@KASengottaiyan">Sengottaiyan KA<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@ttvdhinakaran" id="_@ttvdhinakaran">TTV Dhinakaran<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@SValarmathiOffL" id="_@SValarmathiOffL">Valarmathi S<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@VellamNatarajan" id="_@VellamNatarajan">Vellamandi Natarajan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@VNNatarajanOffl" id="_@VNNatarajanOffl">Vellamandi Natarajan (Offl)<br> 
+
+<b>BJP</b><br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@Narayanan3" id="_@Narayanan3">Narayanan Thirupathi<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@NarendraModi" id="_@NarendraModi">Narendra Modi <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@narendramodi_pm" id="_@narendramodi_pm">Narendra Modi PM<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@PonnaarrBJP" id="_@PonnaarrBJP">Ponnaarr BJP<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@drtamilisaibjp" id="_@drtamilisaibjp">Tamilisai Soundrajan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@VanathiBJP" id="_@VanathiBJP">Vanathi Srinivasan<br> 
+
+
+<b>DMK</b><br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@Anbil_Mahesh" id="_@Anbil_Mahesh">Anbil Mahesh<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@arivalayam" id="_@arivalayam">Arivalayam<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@arulnithitamil" id="_@arulnithitamil">Arulnithi Tamil<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@DMK4TN" id="_@DMK4TN">DMK4TN<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@JAnbazhagan" id="_@JAnbazhagan">JAnbazhagan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@kalaignar89" id="_@kalaignar89">Kalaignar Karunanidhi‏<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@KanimozhiDMK" id="_@KanimozhiDMK">Kanimozhi DMK<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@KN_NEHRU" id="_@KN_NEHRU">KN Nehru<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@sivasankar1ss" id="_@sivasankar1ss">Sivasankar SS (Andimadam)‏<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@mkstalin" id="_@mkstalin">Stalin MK<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@TRBRajaa" id="_@TRBRajaa">TRB Rajaa<br> 
+
+<b>OTHERS</b><br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@makkal_pathai" id="_@makkal_pathai">Makkal Pathai<br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@draramadoss" id="_@draramadoss">Dr. Ramadoss<br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@SeemanOfficial" id="_@SeemanOfficial">Seeman<br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@draramadoss" id="_@draramadoss">Anbumani Ramadoss<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@jothims" id="_@jothims">Jothi Mani (Congress)<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@mdmkiw" id="_@mdmkiw">Vaiko MDMK<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Vijayadharani" id="_@Vijayadharani">Vijayadharani<br> 
+
+<b>PERSONALITY</b><br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@IndraNooyi" id="_@IndraNooyi">Indra Nooyi<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Mkatju" id="_@Mkatju">Markandey Katju<br> 
+
+
+<b>ACTORS</b><br>
+<input type="radio" onchange="construct()" name="tweetTo" value="@arrahman" id="_@arrahman">A.R.Rahman<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@actorabbas" id="_@actorabbas">Abbas<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@ajithfansdotcom" id="_@ajithfansdotcom">Ajith Fans<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@massajith" id="_@massajith">Ajith Fans (massajith) <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@thalafansclub" id="_@thalafansclub">Ajith Fans(thalafansclub)<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@thalatweets" id="_@thalatweets">Ajith FC Trichy<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@ajithkumaractor" id="_@ajithkumaractor">Ajith kumar (Offcial)<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@ajith_fc" id="_@ajith_fc">Ajith_fc Suspended<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@anirudhofficial" id="_@anirudhofficial">Anirudh Ravichander<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@thearvindswami" id="_@thearvindswami">Arvind Swami<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@arya_offl" id="_@arya_offl">Arya<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@AshokSelvan" id="_@AshokSelvan">Ashok Selvan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Atlee_dir" id="_@Atlee_dir">Atlee<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@dhanushkraja" id="_@dhanushkraja">Dhanush<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@diamondbabu4" id="_@diamondbabu4">Diamond Babu<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@gvprakash" id="_@gvprakash">G.V.prakash<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@gautamitads" id="_@gautamitads">Gautami<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Gautham_Karthik " id="_@Gautham_Karthik ">Gautham Karthik<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@hiphoptamizha" id="_@hiphoptamizha">Hiphop Tamizha<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@actor_jai" id="_@actor_jai">Jai<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@actor_jayamravi" id="_@actor_jayamravi">Jayam Ravi<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@actorjiiva" id="_@actorjiiva">Jiiva<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@kalaaprabu " id="_@kalaaprabu ">kalaaprabu<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@theVcreations " id="_@theVcreations ">Kalaippuli S Thanu<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@ikamalhaasan" id="_@ikamalhaasan">Kamal Haasan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@karthi_offl" id="_@karthi_offl">Karthi Actor<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@karthicknaren_M" id="_@karthicknaren_M">Karthick Naren<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@dirlingusamy" id="_@dirlingusamy">Lingusamy Director<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@ActorMadhavan" id="_@ActorMadhavan">Madhavan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@nayantharaU" id="_@nayantharaU">Nayanthara<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@pandiraj_dir" id="_@pandiraj_dir">Pandiraj<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@rparthiepan" id="_@rparthiepan">Parthiepan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@prakashraaj" id="_@prakashraaj">Prakash Raaj<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Prasanna_actor" id="_@Prasanna_actor">Prasanna<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@superstarrajini" id="_@superstarrajini">Rajinikanth<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@imrajveer1singh " id="_@imrajveer1singh ">Rajveer Singh<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Director_Ram" id="_@Director_Ram">Ram Director<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@DOPrasamathi " id="_@DOPrasamathi ">Rasamathi<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@realsarathkumar" id="_@realsarathkumar">Sarathkumar<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@selvaraghavan" id="_@selvaraghavan">Selvaraghavan Dir<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@shruthihassan" id="_@shruthihassan">Shruthi Hassan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@actor_siddharth" id="_@actor_siddharth">Siddharth<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@simbulive" id="_@simbulive">Simbu Live<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Actor_simbufc" id="_@Actor_simbufc">STR Simbu<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Sudhanshu2208" id="_@Sudhanshu2208">Sudhanshu Pandey<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@Suriya_offl" id="_@Suriya_offl">Suriya Sivakumar<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@trishtrashers" id="_@trishtrashers">Trisha Krishnan<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@actor_vadivelu" id="_@actor_vadivelu">Vadivelu<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@actorvijay" id="_@actorvijay">Vijay (Official)<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@vijayfanspage" id="_@vijayfanspage">Vijay Fans (vijayfanspage) <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@vijayfansTN" id="_@vijayfansTN">Vijay Fans (vijayfansTN)<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@vijayfansupdate" id="_@vijayfansupdate">Vijay Fans (vijayfansupdate) <br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@ActorSethupathy" id="_@ActorSethupathy">Vijay Sethupathi<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@iamVikramPrabhu" id="_@iamVikramPrabhu">Vikram Prabhu<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@iamvishnuvishal" id="_@iamvishnuvishal">Vishnu Vishal<br> 
+<input type="radio" onchange="construct()" name="tweetTo" value="@actor_vivek" id="_@actor_vivek">Vivek actor<br> 
+
+
+
+</td>
+<td valign="top" width="45%">
+
+<b>Tweet</b><br><br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" checked value="
+Activist Mugilan missing since he released the video on facts of 5/22/18 @sterlite_copper shootings in Thoothukudi.
+">
+Activist Mugilan missing since he released the video on facts of 5/22/18 @sterlite_copper shootings in Thoothukudi.
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+If activist Mugilan is not in police custody, Did @sterlite_copper kidnap him? 
+">
+If activist Mugilan is not in police custody, Did @sterlite_copper kidnap him? 
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+Why is the admk /bjp govt not responding to concerns of Mugilan’s kidnapping? Are they in bed with @sterlite_copper? 
+">
+Why is the admk /bjp govt not responding to concerns of Mugilan’s kidnapping? Are they in bed with @sterlite_copper? 
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+Is the TN police lying about activist Mugilan for @sterlite_copper?
+">
+Is the TN police lying about activist Mugilan for @sterlite_copper?
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+Why are the TamilNadu political parties not showing any concern for activist Mugilan? 
+Are they in bed with @sterlite_copper?
+">
+Why are the TamilNadu political parties not showing any concern for activist Mugilan? 
+Are they in bed with @sterlite_copper?
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+உனக்காகப் போராடிய ஒருவனைக் காணவில்லை, நமக்கென்ன என்று நீ.
+இன்று அவன், நாளை நீ!!
+">
+உனக்காகப் போராடிய ஒருவனைக் காணவில்லை, நமக்கென்ன என்று நீ.
+இன்று அவன், நாளை நீ!!
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+தமிழக அரசே பதில் சொல். தமிழக காவல் துறையே பதில் சொல்  #WhereisMugilan #முகிலன்_எங்கே?
+">
+தமிழக அரசே பதில் சொல். தமிழக காவல் துறையே பதில் சொல்  #WhereisMugilan #முகிலன்_எங்கே?
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+நாட்டின் மண்ணையும், மணலையும், மலையையும், மக்களையும் காக்க புறப்படும் போராளிகளை கொல்வது ஏன்... தமிழக அதிமுக பஜக அரசு? 
+">
+நாட்டின் மண்ணையும், மணலையும், மலையையும், மக்களையும் காக்க புறப்படும் போராளிகளை கொல்வது ஏன்... தமிழக அதிமுக பஜக அரசு? 
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+தமிழகத்தில் மக்களை காக்க காவல் துறையா? 
+இல்லை @sterlite_copper க்கு கைக்கூலி துறையா?
+">
+தமிழகத்தில் மக்களை காக்க காவல் துறையா? 
+இல்லை @sterlite_copper க்கு கைக்கூலி துறையா?
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+காக்கி சட்டை அணிந்து @sterlite_copper க்கு கைக்கூலி வேலை செய்யும் தமிழக காவல் துறை முகத்தை கிழித்த சூழலியல் போராளி முகிலன் காணவில்லை.
+">
+காக்கி சட்டை அணிந்து @sterlite_copper க்கு கைக்கூலி வேலை செய்யும் தமிழக காவல் துறை முகத்தை கிழித்த சூழலியல் போராளி முகிலன் காணவில்லை.
+<br>
+
+<!-----------------------------------------------------------------------
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+
+">
+
+<br>
+
+<input type="radio" OnClick="construct()" name="tweetContent" value="
+
+">
+
+<br>
+-------------------------------->
+<br>
+
+</td>
+<td valign="top" width="15%">
+<input type="checkbox" OnClick="construct()" name="tweettag" value="
+%23WhereisMugilan %23முகிலன்_எங்கே?
+">
+#WhereisMugilan #முகிலன்_எங்கே?
+<br>
+
+<input type="checkbox" OnClick="construct()" name="tweettag" value="
+%23SaveMugilan
+">
+#SaveMugilan
+<br>
+
+<input type="checkbox" OnClick="construct()" name="tweettag" value="
+%23TNGovtReleaseMugilan
+">
+#TNGovtReleaseMugilan
+<br>
+
+<input type="checkbox" OnClick="construct()" name="tweettag" value="
+%23KeepSterliteShut
+">
+#KeepSterliteShut
+<br>
+
+<input type="checkbox" OnClick="construct()" name="tweettag" value="
+%23JusticeForThoothukudi
+">
+#JusticeForThoothukudi
+<br>
+
+<br>
+</td>
+
+<td valign="top" width="15%">
+
+
+<input type="radio" OnClick="construct()" name="tweetImage" checked value="RJPSmFly7A"><img src="RJPSmFly7A.jpg" height='75' width='75'> <br>
+<input type="radio" OnClick="construct()" name="tweetImage" value="fUj6xAqKNp"><img src="fUj6xAqKNp.jpg" height='75' width='75'> <br>
+<input type="radio" OnClick="construct()" name="tweetImage" value="1hob70ENjW"><img src="1hob70ENjW.jpg" height='75' width='75'> <br>
+<input type="radio" OnClick="construct()" name="tweetImage" value="hwpRDOEpuk"><img src="hwpRDOEpuk.jpg" height='75' width='75'> <br>
+<input type="radio" OnClick="construct()" name="tweetImage" value="fQiZkyL8lL"><img src="fQiZkyL8lL.jpg" height='75' width='75'> <br>
+<input type="radio" OnClick="construct()" name="tweetImage" value="VurLxbZlFr"><img src="VurLxbZlFr.jpg" height='75' width='75'> <br>
+
+
+</td>
+<td valign="top" width="15%">
+<br><br><br><br>
+<b>Page Hits</b>
+<a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=6934856&style=0025&nbdigits=7&type=page&initCount=0" title="Page Visits" Alt=""   border="0" >
+</a>
+</td>
+</tr>
+
+</body>
+<script>
+construct();
+</script>
+</html>
